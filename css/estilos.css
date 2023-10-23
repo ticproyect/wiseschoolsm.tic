@@ -1,0 +1,894 @@
+*{
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+html, body {
+    min-height: 100%;
+}
+
+h1{ font-size: 3em;}
+h2{ font-size: 2.2em;}
+h3{ font-size: 1.7em;}
+p{ font-size: 1.2em;}
+ul{list-style: none;}
+li{ font-size: 1.2em;}
+
+.boton-descubre{
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    color: white;
+    background-color: rgb(3, 167, 3);
+}
+
+button:hover{
+    background-color: rgb(0, 104, 0);
+}
+
+.contenedor{
+    max-width: 1300px;
+    margin: auto;
+}
+
+.color-acento{color:rgb( 0, 104, 0 );}
+
+header{
+    background-color: rgb(245, 245, 245);
+    padding: 10px;
+}
+
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: rgb(3, 167, 3);
+    font-size: 1.8em;
+}
+
+header .contenedor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav-wise{
+    display: flex;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover{
+    color: rgb(0, 104, 0);
+}
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 95vh;
+    color: white;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+    )
+    ,url("/img/domotica.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero h1{
+    color:white;
+}
+
+
+#somos-wis .contenedor{
+    text-align: center;
+    padding: 150px 12px;
+}
+
+#nuestros-proyectos{
+    background-color: rgb(30, 30, 30);
+    color: white;
+    text-align: center;
+}
+#nuestros-proyectos .contenedor{
+    padding: 150px 0px;
+}
+#nuestros-proyectos h2{
+    margin-top: 0;
+    font-size: 3.2em;
+}
+
+#nuestros-proyectos .carta{
+    background-position: center;
+    background-size: cover;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+}
+
+#nuestros-proyectos .carta:hover {
+    transform: translateY(-10px);
+}
+
+#nuestros-proyectos .carta .boton-descubre {
+  display: inline-block;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 10px;
+  color: white;
+  background-color: rgb(3, 167, 3);
+  transition: background-color 0.3s ease; /* Agregamos una transición para un efecto suave */
+}
+
+#nuestros-proyectos .carta .boton-descubre:hover {
+  background-color: rgb(0, 104, 0);
+}
+
+.carta:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+    )
+    ,url("/img/timbre.png");
+}
+
+.carta:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+    )
+    ,url("/img/cactus.jpg");
+}
+
+.carta:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+    )
+    ,url("/img/luz.jpg");
+}
+
+#avances .contenedor{
+    text-align: center;
+    padding: 45px 12px;
+}
+
+#avances .avance{
+    margin-top: 0;
+    font-size: 1.4em;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+.lista {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+.agrandar {
+  max-width: 50px;
+  width: 100%;
+  max-height: 50px;
+  height: 100%;
+  margin: 0 10px; /* Ajusta el margen entre las imágenes */
+}
+
+.redes-avance {
+  width: 100%;
+  height: 50%;
+}
+
+footer {
+  background-color: #f0f0f0;
+  text-align: center;
+  padding: 20px 0;
+}
+
+footer p {
+  margin: 0;
+  font-size: 14px;
+  color: #555;
+}
+@media (max-width: 570px){
+  .nav-wise {
+    flex-direction: column;
+    padding: 10px 0;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 768px)  {
+  header .logo {
+    padding: 15px 20px;
+    font-size: 1.2em;
+  }
+
+  header a {
+    padding: 5px 10px;
+    margin: 0 5px;
+  }
+
+  #hero {
+    height: 80vh;
+  }
+
+  #somos-wis .contenedor {
+    padding: 30px 12px;
+  }
+
+  #nuestros-proyectos .carta {
+    padding: 20px;
+  }
+
+  #avances .contenedor {
+    padding: 20px 12px;
+  }
+
+  .redes-avance {
+    width: 30%; /* Ajustamos el tamaño de los logos de redes sociales */
+    height: auto; /* Permitimos que la altura se ajuste automáticamente */
+  }
+
+  #avances .avance {
+    font-size: 0.5em;
+  }
+
+  #nuestros-proyectos h2 {
+    font-size: 1.8em;
+  }
+
+  .agrandar {
+    max-width: 70%; /* Ajustamos el ancho máximo para dispositivos más pequeños */
+  }
+
+  footer p {
+    font-size: 12px;
+  }
+}
+.banner {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    height: 60vh;
+    max-height: 300px;
+    overflow: hidden;
+}
+  
+.banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    width: 100%;
+  }
+  
+  .overlay h1 {
+    font-size: 80px;
+    color: #ffffff;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+
+  .overlay h1:hover{
+    color: rgb(3, 167, 3);
+  }
+  
+  .overlay p {
+    display: inline-block;
+    font-size: 18px;
+    background-color: rgba(0, 104, 0, 0.6);
+    color: white;
+    padding: 10px;
+    border-radius: 2%;
+  }
+
+  @media (max-width: 767px) {
+    .banner {
+      height: 40vh; 
+    }
+  
+    .overlay h1 {
+      font-size: 40px; 
+    }
+  
+    .overlay p {
+      font-size: 16px; 
+    }
+  }
+
+  .separator {
+    border: 2px solid green; 
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 60px;
+    margin-bottom: 40px;
+  }
+
+  /*NUESTROS OBJETIVOS*/
+  .container-objetivos {
+    text-align: center;
+    margin: 20px auto; /* Centrado en la página */
+  }
+  .container-obje2{
+    max-width: 100%;
+    max-height: max-content;
+    background-color: #f4f4f4;
+  }
+  .objetivos{
+    width: 50%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 15px;
+    background-color: #f4f4f4;
+  }
+  .objetivos h2 {
+    color: #000000; 
+  }
+  
+  .objetivos p {
+    text-align: justify; 
+  }
+  .container-proyectos{
+    max-width: 100%;
+    display: flex;
+    margin-right: 40px;
+    margin-left: 40px;
+    margin-top: 40px;
+    gap: 1em;
+
+  }
+  .proyectos-objetivos {
+    width: 100%;
+    max-height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .timbre-objetivo {
+    padding: 20px;
+    background-color: white; 
+    border: 2px solid rgba(0, 128, 0, 0.5); 
+    border-radius: 10px; 
+    margin-bottom: 20px;
+    transition: all 0.3s ease-in-out;
+    height: 110%
+  }
+
+  .timbre-objetivo:hover {
+    transform: translateY(-5px);
+  }
+  
+  .timbre-objetivo img {
+    border-radius: 50%; 
+    width: 50px; 
+    height: 50px;
+    margin-bottom: 10px;
+  }
+  
+  .timbre-objetivo h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333; 
+  }
+  
+  .timbre-objetivo p {
+    font-size: 14px;
+    text-align: justify;
+    margin-bottom: 10px;
+  }
+  
+  .timbre-objetivo button {
+    padding: 10px 20px;
+    background-color: rgba(0, 128, 0, 0.7); 
+    color: white; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out; 
+  }
+  
+  .timbre-objetivo button:hover {
+    background-color: rgb(3, 167, 3); 
+  }
+
+  @media (max-width: 767px) {
+    .container-objetivos {
+      margin: 10px auto; /* Ajuste de margen para dispositivos más pequeños */
+    }
+  
+    .container-proyectos {
+      flex-direction: column; /* Cambia a disposición de columna en dispositivos más pequeños */
+      margin-right: 10px; /* Ajuste de margen para dispositivos más pequeños */
+      margin-left: 10px; /* Ajuste de margen para dispositivos más pequeños */
+    }
+  
+    .proyectos-objetivos {
+      width: 100%; /* Ancho completo en dispositivos más pequeños */
+    }
+  }
+  
+/*integrantes*/
+.seccion-integrantes {
+    text-align: center;
+    margin: 20px auto;
+  }
+  
+  .container-integrantes {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    gap: 2em;
+    margin: 0 20px;
+  }
+  
+  .seccion-integrantes h2 {
+    color: #000000;
+    margin-bottom: 20px;
+  }
+  
+  .seccion-integrantes h2:hover {
+    color: rgb(3, 167, 3);
+  }
+  
+  .integrante {
+    max-width: 100%;
+    width: 40%;
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .integrante h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  
+  .integrante p {
+    font-size: 14px;
+    color: #555555; /* Agregado el punto y coma al final */
+  }
+
+  @media (min-width: 600px) {
+    /* Para tablets y dispositivos más grandes */
+    .container-integrantes {
+      margin: 0 auto;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    /* Para dispositivos más grandes como tablets en modo horizontal */
+    .container-integrantes {
+      margin: 0 auto;
+      max-width: 800px; /* Ajusta según tus necesidades */
+    }
+  }
+  
+  /**/
+
+#fondo{
+    background: rgb(203,217,203);
+    background: linear-gradient(180deg, rgba(203,217,203,0.47942927170868344) 23%, rgba(59,245,162,0.7035189075630253) 64%);
+}
+
+.imagen-timbre{
+    max-width: 300px;
+    max-height: 300px;
+}
+
+.timbre-foto{
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}
+
+.timbre{
+    background-color: #ffffffee;
+    border-radius: 6%;
+    border-bottom-style: groove;
+    border-bottom-color: rgb(33, 199, 0);
+}
+
+.riego{
+    background-color: #ffffffee;
+    border-radius: 6%;
+    border-bottom-style: groove;
+    border-bottom-color: rgb(33, 199, 0);
+}
+
+.luz{
+    background-color: #ffffffee;
+    border-radius: 6%;
+    border-bottom-style: groove;
+    border-bottom-color: rgb(33, 199, 0);
+}
+
+.proyectos{
+    gap: 1.5em;
+    margin: 5%;
+    margin-bottom: 1%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.proyectos-title{
+    padding-top: 5%;
+    color: rgb(3, 167, 3);
+    font-size: 45px;
+    text-align: center;
+}
+
+.title-timbre{
+    text-align: center;
+    font-size: 27px;
+    color: black;
+}
+
+.parrafo-timbre{
+    padding-right: 2%;
+    padding-left: 2%;
+    text-align: center;
+}
+
+/*timbre*/
+.contenedor-nav {
+  max-width: 100%;
+  height: 100%;
+  background-color: #f4f4f4;
+  padding: 20px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1); /* Agregamos sombra en la parte inferior */
+}
+
+.titulo-nav {
+  width: 30%;
+  text-align: left;
+  color: rgb(3, 167, 3);
+  transition: color 0.3s ease; 
+  border-bottom: 2px solid rgb(0, 104, 0);
+}
+
+.titulo-nav:hover {
+  color: rgb(0, 104, 0); /* Cambio de color al hacer hover */
+  margin-bottom: 5px; /* Ajusta el margen inferior al hacer hover */
+  border-bottom: 2px solid rgb(3, 167, 3);
+}
+
+.contenido-central {
+  width: 50%;
+  text-align: center;
+}
+
+.logo-container {
+  max-width: 100px;
+  margin-bottom: 10px;
+  margin: 0 auto;
+}
+
+.logofoto {
+  width: 100%;
+  height: auto;
+}
+
+.nav2 {
+  display: flex;
+  justify-content: center;
+}
+
+.nav2 a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: black;
+  transition: color 0.3s ease;
+  margin-bottom: 3px; 
+}
+
+.nav2 a:hover {
+  color: rgb(0, 104, 0); 
+  transform: scale(1.1);
+}
+
+@media (max-width: 744px) {
+  .contenedor-nav {
+    padding: 10px; /* Ajusta el relleno para dispositivos más pequeños */
+  }
+
+  .titulo-nav{
+    text-align: center;
+    border-bottom: none;
+    width: 100%;
+  }
+
+  .contenido-central {
+    width: 100%; 
+  }
+
+  .logo-container {
+    max-width: 80px; 
+  }
+
+  .nav2 a {
+    margin: 0 5px; 
+}
+}
+
+@media (max-width: 744px) and (orientation: landscape) {
+  .contenedor-nav {
+    padding: 10px; 
+  }
+
+  .contenido-central {
+    width: 100%; 
+  }
+
+  .logo-container {
+    max-width: 80px; 
+  }
+
+  .nav2 a {
+    margin: 0 5px; 
+  }
+}
+
+.timbre-automatico{
+  max-width: 100%;
+  max-height: 400px;
+}
+
+
+
+#timbre-automatico{
+  max-width: 100%;
+  max-height: 100%;
+  margin: 0 50px;
+}
+
+.timbreh2{
+  font-size: 2.2em;
+  color: black;
+  text-align: center;
+  transition: color 0.3s ease;
+}
+
+.timbreh2:hover {
+  color:rgb(3, 167, 3); /* Cambia el color al hacer hover */
+  transform: scale(1.1); /* Hace un ligero zoom al hacer hover */
+}
+
+.container-info{
+  width: 100%;
+  display: flex;
+  height: 400px;
+  background-color: #f4f4f4;
+  padding: 40px;
+}
+
+.foto-timbre{
+  width: 30%;
+  height: 100%;
+  
+}
+.parrafo-container{
+  width: 70%;
+  height: 100%;
+  align-content: center;
+  text-align: justify;
+  padding: 20px;
+}
+
+.separator2{
+  border: 2px solid green; 
+  width: 50%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+@media (max-width: 768px) {
+  #timbre-automatico {
+    margin: 0 10px;
+    padding: 10px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: lightgray;
+    border-radius: 10px;
+    max-width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+    display: block;
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+    border-radius: 0;
+    padding: 20px;
+  }
+
+  .container-info {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .foto-timbre {
+    max-width: 100%; /* Cambiar el tamaño máximo de la foto para que sea pequeña */
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .parrafo-container {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+  }
+}
+
+.materiales-timbre{
+  max-width: 100%;
+  margin: 0 90px;
+  padding: 20px;
+  text-align: center;
+}
+
+.materiales-timbre h1{
+  font-size: 2.0em;
+  color: black;
+  text-align: center;
+  transition: color 0.3s ease;
+  margin-bottom: 10px;
+}
+
+.materiales-timbre h1:hover {
+  color:rgb(3, 167, 3); /* Cambia el color al hacer hover */
+  transform: scale(1.0); /* Hace un ligero zoom al hacer hover */
+}
+
+.contenedor-list {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: #f4f4f4; 
+  padding: 50px;
+  border-radius: 10px;
+}
+
+.contenedor-list li {
+  margin-bottom: 10px;
+  text-align: justify;
+}
+
+.contenedor-list li:hover {
+ color: rgb(3, 167, 3);
+
+}
+
+.contenedor-list ul {
+  width: 30%;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.contenedor-fotos{
+  max-width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+
+.imagen-con-hover {
+  position: relative; /* Permite posicionar el texto en relación con la imagen */
+  max-width: 140px;
+  height: 130px;
+  object-fit: cover;
+  border: 1px rgb(3, 167, 3) solid;
+  overflow: hidden; /* Para ocultar el texto que pueda desbordar la imagen */
+  transition: background-color 0.3s; /* Agrega una transición al color de fondo para el efecto hover */
+}
+
+.fotos-materiales {
+  width: 140px;
+  height: 130px;
+  object-fit: cover;
+  border: 1px rgb(3, 167, 3) solid;
+}
+
+
+.imagen-con-hover:hover {
+  background-color: rgba(0, 0, 0, 0.7); /* Fondo transparente con opacidad al hacer hover */
+}
+
+.nombre-material {
+  position: absolute; /* Posiciona el texto dentro del contenedor */
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Fondo transparente con opacidad */
+  color: white; /* Color del texto */
+  padding: 5px; /* Espaciado interior del texto */
+  text-align: center; /* Centrar el texto horizontalmente */
+  opacity: 0; /* Inicialmente, el texto no es visible */
+  transition: opacity 0.3s; /* Agrega una transición para la opacidad del texto */
+}
+
+.imagen-con-hover:hover .nombre-material {
+  opacity: 1; /* Hacer que el texto sea visible al hacer hover en la imagen */
+}
+
+@media (max-width: 767px) {
+  .materiales-timbre {
+    margin: 0 10px;
+  }
+
+  .contenedor-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contenedor-list ul {
+    width: 100%;
+  }
+
+  .contenedor-fotos {
+    max-width: 100%;
+    justify-content: center;
+  }
+
+  .imagen-con-hover {
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .fotos-materiales {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* Estilos para tablets en orientación horizontal y pantallas pequeñas */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .contenedor-list {
+    padding: 30px;
+  }
+}
