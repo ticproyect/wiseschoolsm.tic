@@ -91,7 +91,7 @@ header a:hover{
         rgba(0, 0, 0, 0.5),
         rgba(0, 0, 0, 0.5)
     )
-    ,url("/img/domotica.png");
+    ,url("img/domotica.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -153,7 +153,7 @@ header a:hover{
         rgba(0, 0, 0, 0.5),
         rgba(0, 0, 0, 0.5)
     )
-    ,url("/img/timbre.png");
+    ,url("img/timbre.png");
 }
 
 .carta:nth-child(2){
@@ -162,7 +162,7 @@ header a:hover{
         rgba(0, 0, 0, 0.5),
         rgba(0, 0, 0, 0.5)
     )
-    ,url("/img/cactus.jpg");
+    ,url("img/cactus.jpg");
 }
 
 .carta:nth-child(3){
@@ -171,7 +171,7 @@ header a:hover{
         rgba(0, 0, 0, 0.5),
         rgba(0, 0, 0, 0.5)
     )
-    ,url("/img/luz.jpg");
+    ,url("img/luz.jpg");
 }
 
 #avances .contenedor{
