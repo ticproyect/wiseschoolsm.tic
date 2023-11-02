@@ -91,7 +91,7 @@ header a:hover{
         rgba(0, 0, 0, 0.5),
         rgba(0, 0, 0, 0.5)
     )
-    ,url("../img/domotica.png");
+    ,url("../img/img2/domotica.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -891,4 +891,21 @@ footer p {
   .contenedor-list {
     padding: 30px;
   }
+}
+
+.container-soon {
+  text-align: center;
+  margin: 200px auto;
+}
+
+.container-soon h1 {
+  font-size: 8em;
+  font-weight: bold;
+  color: #131313;
+  transition: color 0.3s;
+  cursor: pointer;
+}
+
+h1:hover {
+  color: #00d100; /* Cambia el color al pasar el mouse por encima */
 }
